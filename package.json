@@ -3,5 +3,9 @@
   "dependencies": {
     "express": "^4.21.2",
     "serverless-http": "^3.2.0"
+  },
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve .",
+    "build": "./node_modules/.bin/netlify-lambda build ."
   }
 }

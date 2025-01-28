@@ -4,9 +4,12 @@ import serverless from "serverless-http";
 const api = express();
 
 const port = process.env.PORT || 3000;
+const router = Router();
 
-api.get("/", (req, res) => {
-  res.send({ res: "success" });
+router.get("/hello", (req, res) => {
+  res.send({ res: "hellow world" });
 });
+
+api.use("/api/", router);
 
 export const handler = serverless(api);
