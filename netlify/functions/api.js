@@ -15,5 +15,6 @@ router.get("/hello", (req, res) => {
 });
 
 api.use("/.netlify/functions/api", router);
+api.use("/.netlify/functions/api/leet", leetRoute);
 
 export const handler = serverless(api);
