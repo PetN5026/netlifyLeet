@@ -1,6 +1,6 @@
 import express, { Router } from "express";
 import serverless from "serverless-http";
-
+import leetRoute from "./leetcode.js";
 const api = express();
 
 const port = process.env.PORT || 3000;
